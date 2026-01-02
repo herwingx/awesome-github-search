@@ -64,9 +64,9 @@ La aplicación sigue una arquitectura SPA (Single Page Application) ligera sin d
 
 ```mermaid
 graph TD
-    User([👤 Usuario]) -->|Escribe Búsqueda| UI[💻 Interfaz Web]
-    UI -->|Evento Input| JS[⚙️ Lógica (script.js)]
-    JS -->|Fetch Request| API[☁️ GitHub REST API]
+    User(["👤 Usuario"]) -->|Escribe Búsqueda| UI["💻 Interfaz Web"]
+    UI -->|Evento Input| JS["⚙️ Lógica (script.js)"]
+    JS -->|Fetch Request| API["☁️ GitHub REST API"]
     API -->|JSON Response| JS
     JS -->|Update DOM| UI
     style UI fill:#f9f,stroke:#333
